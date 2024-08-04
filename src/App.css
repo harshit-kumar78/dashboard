@@ -1,0 +1,178 @@
+body {
+  margin       : 0;
+  padding      : 0;
+  box-sizing   : border-box;
+  color        : white;
+  /* width     : 100vh;
+  height       : 100vh; */
+}
+
+
+
+/* hand */
+.hand {
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+}
+
+.main-container {
+  display       : flex;
+  flex-direction: column;
+}
+
+.fs40px {
+  font-size  : 40px;
+  font-weight: 600px;
+}
+
+.fs24px {
+  font-size: 24px;
+}
+
+.fs30px {
+  font-size: 20px;
+}
+
+.fs20px {
+  font-size: 20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-items-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.red {
+  color: red;
+}
+
+.bg-red {
+  background-color: red;
+
+}
+
+.green {
+  color: green;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.orange {
+  color: orange;
+}
+
+.bg-blue {
+  background-color: blue;
+
+}
+
+.blue {
+  color: blue;
+}
+
+.pink {
+  color: rgb(244, 5, 45);
+}
+
+.circular-icon {
+  width          : 40px;
+  height         : 40px;
+  background     : #4d4343;
+  border-radius  : 50%;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.bg-circular-icon {
+  width          : 60px;
+  height         : 60px;
+  border-radius  : 50%;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.fs16px {
+  font-size: 16px;
+}
+
+.chip-red {
+  display         : inline-block;
+  background-color: lightcoral;
+  color           : darkred;
+  padding         : 5px 10px;
+  border-radius   : 15px;
+  font-size       : 14px;
+  text-align      : center;
+  font-weight     : bold;
+}
+
+.chip-green {
+  display         : inline-block;
+  background-color: rgb(7, 156, 29, 0.5);
+  color           : #27ff8c;
+  padding         : 5px 10px;
+  border-radius   : 15px;
+  font-size       : 14px;
+  text-align      : center;
+  font-weight     : bold;
+}
+
+.gap8px {
+  gap: 8px;
+}
+
+.star.filled {
+  color: yellow;
+}
+
+::-webkit-scrollbar {
+  width        : 8px;
+  /* Width of the scrollbar */
+  height       : 8px;
+  /* Height of the scrollbar (for horizontal scrollbar) */
+  width        : 8px;
+  height       : 8px;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* Color of the scrollbar thumb */
+  border-radius   : 4px;
+  /* Rounded corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  /* Color of the scrollbar thumb when hovered */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1f2029;
+  /* Background color of the scrollbar
+  track */
+}
+
+/* use case */
+
+.border {
+  border: 2px solid red;
+}

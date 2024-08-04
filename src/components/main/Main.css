@@ -1,0 +1,391 @@
+.main-wrapper {
+    /* height: 100vh; */
+    /* width : calc(100vw - 70px); */
+    flex: 1
+}
+
+.dashboard-overview {
+    justify-content: space-between;
+    display        : flex;
+    align-items    : center;
+    gap            : 50px
+}
+
+
+
+.dashboard-overview-cards {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    gap            : 40px;
+    width          : 70%;
+}
+
+.cards {
+    padding       : 12px;
+    width         : 250px;
+    height        : 150px;
+    display       : flex;
+    background    : #1f2029;
+    flex-direction: column;
+    border-radius : 12px;
+    gap           : 13px;
+    color         : white
+}
+
+.dashboard-overview-profit {
+    width: 30%;
+
+}
+
+.profit-card {
+    background     : #1f2029;
+    padding        : 12px;
+    height         : 174px;
+    box-sizing     : border-box;
+    border-radius  : 12px;
+    color          : black;
+    display        : flex;
+    justify-content: space-between;
+    gap            : 126px;
+    color          : white
+}
+
+.profit-card-left {
+    display       : flex;
+    flex-direction: column;
+    gap           : 16px;
+}
+
+.activity {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    gap            : 54px;
+}
+
+.activity-section {
+    width        : 70%;
+    height       : 500px;
+    /* border    : 1px solid green; */
+    margin       : 32px 0;
+    background   : #1f2029;
+    border-radius: 12px;
+    padding      : 12px;
+    box-sizing   : border-box;
+}
+
+.about-us-section {
+    width            : 30%;
+    height           : 500px;
+    /* border        : 1px solid red; */
+    padding          : 20px;
+    box-sizing       : border-box;
+    display          : flex;
+    flex-direction   : column;
+    gap              : 20px;
+    background       : #1f2029;
+    border-radius    : 12px;
+    margin           : 32px 0;
+}
+
+.gap10px {
+    gap: 10px;
+}
+
+.last-section {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    gap            : 54px;
+}
+
+.recent-orders-section {
+    width    : 70%;
+    /* border: 1px solid green; */
+}
+
+.feedback-section {
+    width            : 30%;
+    height           : 250px;
+    /* border        : 1px solid red; */
+    padding          : 20px;
+    box-sizing       : border-box;
+    display          : flex;
+    flex-direction   : column;
+    gap              : 20px;
+    height           : 524px;
+    border-radius    : 12px;
+    overflow-y       : scroll;
+    background       : #1f2029;
+}
+
+table {
+    width          : 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid grey;
+}
+
+th,
+td {
+    padding: 12px;
+
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.recent-orders-section {
+    padding         : 12px;
+    border-radius   : 12px;
+    background-color: #1f2029;
+}
+
+.recent-orders-section-title {
+    font-size  : 24px;
+    margin     : 12px 0;
+    font-weight: 600;
+}
+
+.feedback-section-title {
+    font-size  : 24px;
+    margin     : 12px 0;
+    font-weight: 600;
+}
+
+.feedback-section-comments {
+    display       : flex;
+    flex-direction: column;
+    gap           : 8px;
+}
+
+hr {
+    border          : 0;
+    height          : 2px;
+    background-color: #ff5733;
+    width           : 100%;
+}
+
+.profit-card-right {
+    height     : 120px;
+    width      : 125px;
+    /* padding : 12px; */
+    position   : relative;
+}
+
+.style1234 {
+    height: 142px;
+}
+
+select {
+    background   : #1f2029;
+    color        : white;
+    padding      : 8px;
+    border-radius: 25px;
+}
+
+.activity-section-title {
+    font-size      : 24px;
+    margin         : 12px 0;
+    font-weight    : 600;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+@media(max-width:400px) {
+    .dashboard-overview {
+        justify-content: space-between;
+        display        : flex;
+        align-items    : center;
+        gap            : 50px;
+        flex-wrap      : wrap;
+    }
+
+    .dashboard-overview-cards {
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+        gap            : 40px;
+        width          : 100%;
+        flex-wrap      : wrap;
+    }
+
+    .cards {
+        padding      : 8px;
+        width        : 100px;
+        height       : 100px;
+        border-radius: 4px;
+        gap          : 4px;
+        flex-grow    : 1;
+        padding      : 12px;
+    }
+
+    .title {
+        font-size    : 16px;
+        font-weight  : 600;
+        margin-bottom: 16px;
+    }
+
+    .profit-card {
+        padding      : 4px;
+        height       : 157px;
+        border-radius: 7px;
+        gap          : 4px;
+    }
+
+    .dashboard-overview-profit {
+        width: 100%;
+    }
+
+    .profit-card-left {
+        gap: 16px;
+    }
+
+    .fs24px {
+        font-size: 12px;
+    }
+
+    .fs40px {
+        font-size: 28px;
+    }
+
+    .last-section {
+        flex-wrap: wrap;
+    }
+
+    .recent-orders-section {
+        width: 100%;
+
+    }
+
+    .feedback-section {
+        width        : 100%;
+        padding      : 12px;
+        gap          : 12px;
+        height       : 350px;
+        border-radius: 12px;
+
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    th {
+        display: none;
+        /* Hide table headers */
+    }
+
+    td {
+        border      : none;
+        position    : relative;
+        padding-left: 50%;
+        white-space : nowrap;
+    }
+
+    td:before {
+        content     : attr(data-label);
+        position    : absolute;
+        left        : 0;
+        width       : 50%;
+        padding-left: 10px;
+        font-weight : bold;
+        white-space : nowrap;
+        text-align  : left;
+
+    }
+
+    .text-align-center {
+        text-align: center;
+    }
+
+    .text-align-left {
+        text-align: center;
+    }
+
+    tbody {
+        height    : 360px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .gap8px>svg {
+        height: 15px;
+        width : 15px;
+    }
+
+    .activity {
+        flex-wrap: wrap;
+        gap      : 8px;
+    }
+
+    .activity-section {
+        width        : 100%;
+        height       : 325px;
+        margin-bottom: 0;
+
+    }
+
+    .about-us-section {
+        width : 100%;
+        height: 245px;
+    }
+}
+
+@media (min-width:900px) and (max-width: 1200px) {
+
+    /* Styles here */
+    .dashboard-overview {
+        gap: 20px;
+    }
+
+    .dashboard-overview-cards {
+        gap  : 16px;
+        width: 100%;
+    }
+
+    .cards {
+        width        : 150px;
+        height       : 150px;
+        border-radius: 12px;
+        gap          : 13px;
+
+    }
+
+    .dashboard-overview-profit {
+        width: 100%;
+    }
+
+    .profit-card {
+        height: 167px;
+        gap   : 0px;
+        color : white;
+    }
+
+    .profit-card-left {
+        display       : flex;
+        flex-direction: column;
+        gap           : 8px;
+    }
+
+    .profit-card-right {
+        height  : 120px;
+        width   : 125px;
+        padding : 0;
+        position: relative;
+    }
+}

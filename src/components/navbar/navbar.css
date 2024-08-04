@@ -1,0 +1,78 @@
+.navbar {
+    min-height      : 80px;
+    background-color: #1f2029;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+}
+
+.navbar-search-bar>input {
+    background   : black;
+    font-size    : 20px;
+    width        : 100%;
+    border       : none;
+    outline      : none;
+    border-radius: 8px;
+    padding      : 7px;
+    color        : white
+}
+
+input::placeholder {
+    color: white
+}
+
+.navbar-container {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 0 32px;
+}
+
+.navbar-container {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 0px 20px;
+    gap            : 24px;
+}
+
+.navbar-right-icons {
+    display        : flex;
+    align-items    : center;
+    gap            : 10px;
+    justify-content: center;
+}
+
+@media(max-width:400px) {
+    .navbar {
+        padding: 0 8px;
+    }
+
+    .navbar-container {
+        padding: 0;
+    }
+
+    .navbar-search-bar>input {
+        font-size: 12px;
+        width    : 100px;
+        padding  : 8px;
+    }
+
+    .circular-icon {
+        width : 25px;
+        height: 25px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    .navbar-search-bar>input {
+        background   : black;
+        font-size    : 20px;
+        width        : 100%;
+        border       : none;
+        outline      : none;
+        border-radius: 8px;
+        padding      : 7px;
+        color        : white;
+    }
+}
