@@ -9,12 +9,12 @@ import Main from './components/main/Main'
 function App() {
   return (
     <>
-      <div className="app">
-        <div className="main">
-          <Sidenav />
-          <Main />
-        </div>
+      {/* <div className="app"> */}
+      <div className="main">
+        <Sidenav />
+        <Main />
       </div>
+      {/* </div> */}
     </>
   )
 }

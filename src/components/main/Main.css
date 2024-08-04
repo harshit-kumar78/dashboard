@@ -1,8 +1,9 @@
 .main-wrapper {
-    /* height: 100vh; */
-    /* width : calc(100vw - 70px); */
-    flex: 1
+
+    flex      : 1;
+    overflow-x: hidden;
 }
+
 
 .dashboard-overview {
     justify-content: space-between;
@@ -201,7 +202,174 @@ select {
     align-items    : center;
 }
 
-@media(max-width:400px) {
+@media (max-width: 1720px) {
+    .dashboard-overview {
+        flex-wrap: wrap;
+    }
+
+    .dashboard-overview-cards,
+    .dashboard-overview-profit,
+    .activity-section,
+    .about-us-section,
+    .recent-orders-section,
+    .feedback-section {
+        width: 100%;
+    }
+
+    .cards {
+        width: calc(100% - 24px);
+        /* Adjusted width to fit within container */
+    }
+
+    .activity {
+        display: block;
+    }
+}
+
+@media (max-width: 1200px) {
+    .dashboard-overview {
+        flex-wrap: wrap;
+    }
+
+    .dashboard-overview-cards,
+    .dashboard-overview-profit,
+    .activity-section,
+    .about-us-section,
+    .recent-orders-section,
+    .feedback-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .dashboard-overview {
+        flex-direction: column;
+        align-items   : stretch;
+        gap           : 20px;
+    }
+
+    .dashboard-overview-cards,
+    .activity-section,
+    .recent-orders-section,
+    .feedback-section,
+    .about-us-section {
+        width: 100%;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .profit-card,
+    .activity-section,
+    .recent-orders-section,
+    .feedback-section,
+    .about-us-section {
+        padding: 10px;
+    }
+
+    .activity {
+        display: block;
+    }
+}
+
+@media(max-width:720px) {
+    .dashboard-overview {
+        justify-content: space-between;
+        display        : flex;
+        align-items    : center;
+        gap            : 50px;
+        flex-wrap      : wrap;
+    }
+
+    .dashboard-overview-cards {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        gap            : 27px;
+        flex-wrap      : wrap;
+        width          : 100%;
+    }
+
+    .cards {
+        padding       : 12px;
+        width         : 100%;
+        height        : 150px;
+        display       : flex;
+        background    : #1f2029;
+        flex-direction: column;
+        border-radius : 12px;
+        gap           : 13px;
+        color         : white;
+    }
+
+    .dashboard-overview-profit {
+        width: 100%;
+    }
+
+    .activity {
+        display        : block;
+        justify-content: space-between;
+        align-items    : center;
+        gap            : 54px;
+        flex-wrap      : wrap;
+    }
+
+    .activity-section {
+        width        : 100%;
+        height       : 500px;
+        /* border    : 1px solid green; */
+        margin       : 32px 0;
+        background   : #1f2029;
+        border-radius: 12px;
+        padding      : 12px;
+        box-sizing   : border-box;
+    }
+
+    .about-us-section {
+        width         : 100%;
+        height        : 500px;
+        /* border     : 1px solid red; */
+        padding       : 20px;
+        box-sizing    : border-box;
+        display       : flex;
+        flex-direction: column;
+        gap           : 20px;
+        background    : #1f2029;
+        border-radius : 12px;
+        margin        : 32px 0;
+    }
+
+    .last-section {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        gap            : 54px;
+        flex-wrap      : wrap;
+    }
+
+    .recent-orders-section {
+        width    : 100%;
+        /* border: 1px solid green; */
+    }
+
+    .feedback-section {
+        width         : 100%;
+        height        : 250px;
+        /* border     : 1px solid red; */
+        padding       : 20px;
+        box-sizing    : border-box;
+        display       : flex;
+        flex-direction: column;
+        gap           : 20px;
+        height        : 524px;
+        border-radius : 12px;
+        overflow-y    : scroll;
+        background    : #1f2029;
+    }
+}
+
+@media(max-width:550px) {
     .dashboard-overview {
         justify-content: space-between;
         display        : flex;
@@ -343,49 +511,5 @@ select {
     .about-us-section {
         width : 100%;
         height: 245px;
-    }
-}
-
-@media (min-width:900px) and (max-width: 1200px) {
-
-    /* Styles here */
-    .dashboard-overview {
-        gap: 20px;
-    }
-
-    .dashboard-overview-cards {
-        gap  : 16px;
-        width: 100%;
-    }
-
-    .cards {
-        width        : 150px;
-        height       : 150px;
-        border-radius: 12px;
-        gap          : 13px;
-
-    }
-
-    .dashboard-overview-profit {
-        width: 100%;
-    }
-
-    .profit-card {
-        height: 167px;
-        gap   : 0px;
-        color : white;
-    }
-
-    .profit-card-left {
-        display       : flex;
-        flex-direction: column;
-        gap           : 8px;
-    }
-
-    .profit-card-right {
-        height  : 120px;
-        width   : 125px;
-        padding : 0;
-        position: relative;
     }
 }

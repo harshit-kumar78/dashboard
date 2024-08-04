@@ -83,9 +83,12 @@ const Main = () => {
                                     </select>
                                 </div>
                             </div>
-                            <div className="activity-section-dropdown">
+                            <div className="activity-section-chart">
                                 {/* add dropdown here to see weekly,monthly,yearly */}
-                                {/* <BarChart const data={[30, 86, 168, 281, 303, 365, 504, 573, 660, 168, 281, 303, 365, 168, 281, 303, 365, 168, 281, 303, 365]} /> */}
+
+
+                                <BarChart data={[30, 86, 168, 281, 303, 365, 504, 573, 660, 168, 281, 303, 365, 168, 281, 303, 365, 168, 281, 303, 365]} />
+
                                 {/* </div> */}
                             </div>
                         </div>
