@@ -9,9 +9,8 @@
     justify-content: space-between;
     display        : flex;
     align-items    : center;
-    gap            : 50px
+    gap            : 36px;
 }
-
 
 
 .dashboard-overview-cards {
@@ -29,9 +28,9 @@
     display       : flex;
     background    : #1f2029;
     flex-direction: column;
-    border-radius : 12px;
+    border-radius : 8px;
     gap           : 13px;
-    color         : white
+    color         : white;
 }
 
 .dashboard-overview-profit {
@@ -44,25 +43,25 @@
     padding        : 12px;
     height         : 174px;
     box-sizing     : border-box;
-    border-radius  : 12px;
+    border-radius  : 8px;
     color          : black;
     display        : flex;
     justify-content: space-between;
-    gap            : 126px;
-    color          : white
+    gap            : 114px;
+    color          : white;
 }
 
 .profit-card-left {
     display       : flex;
     flex-direction: column;
-    gap           : 16px;
+    gap           : 20px;
 }
 
 .activity {
     display        : flex;
     justify-content: space-between;
     align-items    : center;
-    gap            : 54px;
+    gap            : 36px;
 }
 
 .activity-section {
@@ -71,23 +70,23 @@
     /* border    : 1px solid green; */
     margin       : 32px 0;
     background   : #1f2029;
-    border-radius: 12px;
+    border-radius: 8px;
     padding      : 12px;
     box-sizing   : border-box;
 }
 
 .about-us-section {
-    width            : 30%;
-    height           : 500px;
-    /* border        : 1px solid red; */
-    padding          : 20px;
-    box-sizing       : border-box;
-    display          : flex;
-    flex-direction   : column;
-    gap              : 20px;
-    background       : #1f2029;
-    border-radius    : 12px;
-    margin           : 32px 0;
+    width         : 30%;
+    height        : 500px;
+    /* border     : 1px solid red; */
+    padding       : 12px;
+    box-sizing    : border-box;
+    display       : flex;
+    flex-direction: column;
+    gap           : 20px;
+    background    : #1f2029;
+    border-radius : 8px;
+    margin        : 32px 0;
 }
 
 .gap10px {
@@ -98,27 +97,22 @@
     display        : flex;
     justify-content: space-between;
     align-items    : center;
-    gap            : 54px;
-}
-
-.recent-orders-section {
-    width    : 70%;
-    /* border: 1px solid green; */
+    gap            : 36px;
 }
 
 .feedback-section {
-    width            : 30%;
-    height           : 250px;
-    /* border        : 1px solid red; */
-    padding          : 20px;
-    box-sizing       : border-box;
-    display          : flex;
-    flex-direction   : column;
-    gap              : 20px;
-    height           : 524px;
-    border-radius    : 12px;
-    overflow-y       : scroll;
-    background       : #1f2029;
+    width         : 30%;
+    height        : 250px;
+    /* border     : 1px solid red; */
+    padding       : 12px;
+    box-sizing    : border-box;
+    display       : flex;
+    flex-direction: column;
+    gap           : 20px;
+    height        : 524px;
+    border-radius : 8px;
+    overflow-y    : scroll;
+    background    : #1f2029;
 }
 
 table {
@@ -146,8 +140,9 @@ td {
 
 .recent-orders-section {
     padding         : 12px;
-    border-radius   : 12px;
+    border-radius   : 8px;
     background-color: #1f2029;
+    width           : 68%;
 }
 
 .recent-orders-section-title {
@@ -224,6 +219,7 @@ select {
     .activity {
         display: block;
     }
+
 }
 
 @media (max-width: 1200px) {
@@ -238,6 +234,19 @@ select {
     .recent-orders-section,
     .feedback-section {
         width: 100%;
+    }
+
+    .last-section {
+        gap: 25px;
+    }
+
+    .recent-orders-section {
+        width: 62%;
+    }
+
+    .feedback-section {
+        width  : 40%;
+        padding: 12px;
     }
 }
 
@@ -257,7 +266,8 @@ select {
     }
 
     .cards {
-        width: 100%;
+
+        gap: 12px;
     }
 
     .profit-card,
@@ -270,6 +280,30 @@ select {
 
     .activity {
         display: block;
+    }
+
+    .fs24px {
+        font-size: 18px
+    }
+
+    .feedback-section {
+        width: 100%;
+    }
+
+    .last-section {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        gap            : 25px;
+        flex-wrap      : wrap;
+    }
+
+    .recent-orders-section {
+        width: 100%;
+    }
+
+    .dashboard-overview-cards {
+        gap: 12px;
     }
 }
 
@@ -374,7 +408,7 @@ select {
         justify-content: space-between;
         display        : flex;
         align-items    : center;
-        gap            : 50px;
+        gap            : 28px;
         flex-wrap      : wrap;
     }
 
@@ -382,7 +416,7 @@ select {
         display        : flex;
         align-items    : center;
         justify-content: space-between;
-        gap            : 40px;
+        gap            : 28px;
         width          : 100%;
         flex-wrap      : wrap;
     }
@@ -404,9 +438,9 @@ select {
     }
 
     .profit-card {
-        padding      : 4px;
+        padding      : 8px;
         height       : 157px;
-        border-radius: 7px;
+        border-radius: 0px;
         gap          : 4px;
     }
 
@@ -415,7 +449,7 @@ select {
     }
 
     .profit-card-left {
-        gap: 16px;
+        gap: 32px;
     }
 
     .fs24px {
