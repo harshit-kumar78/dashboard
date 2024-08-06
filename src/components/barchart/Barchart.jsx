@@ -19,7 +19,7 @@ const BarChart = ({ data }) => {
             const x = d3.scaleBand()
                 .domain(d3.range(data.length))
                 .range([margin.left, width - margin.right])
-                .padding(0.1);
+                .padding(0.1).padding(0.1);
 
             const y = d3.scaleLinear()
                 .domain([0, d3.max(data)])
