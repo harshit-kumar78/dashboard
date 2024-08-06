@@ -1,21 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Sidenav from './components/sidenav/Sidenav'
-import Navbar from './components/navbar/navbar'
-import Dashboard from './pages/dashboard/Dashboard';
-import Main from './components/main/Main'
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import { Wrapper } from './components/wrapper/Wrapper';
+
+
 function App() {
   return (
-    <>
-      {/* <div className="app"> */}
-      <div className="main">
-        <Sidenav />
-        <Main />
-      </div>
-      {/* </div> */}
-    </>
+
+    <Routes>
+      <Route path="/" element={<Wrapper />}></Route>
+    </Routes>
   )
 }
 

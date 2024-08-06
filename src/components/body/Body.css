@@ -1,5 +1,4 @@
 .main-wrapper {
-
     flex      : 1;
     overflow-x: hidden;
 }
@@ -103,7 +102,6 @@
 .feedback-section {
     width         : 30%;
     height        : 250px;
-    /* border     : 1px solid red; */
     padding       : 12px;
     box-sizing    : border-box;
     display       : flex;
@@ -171,10 +169,9 @@ hr {
 }
 
 .profit-card-right {
-    height     : 120px;
-    width      : 125px;
-    /* padding : 12px; */
-    position   : relative;
+    height  : 120px;
+    width   : 125px;
+    position: relative;
 }
 
 .style1234 {
@@ -197,6 +194,7 @@ select {
     align-items    : center;
 }
 
+/* media query */
 @media (max-width: 1720px) {
     .dashboard-overview {
         flex-wrap: wrap;
@@ -213,7 +211,6 @@ select {
 
     .cards {
         width: calc(100% - 24px);
-        /* Adjusted width to fit within container */
     }
 
     .activity {
@@ -352,7 +349,6 @@ select {
     .activity-section {
         width        : 100%;
         height       : 500px;
-        /* border    : 1px solid green; */
         margin       : 32px 0;
         background   : #1f2029;
         border-radius: 12px;
@@ -363,7 +359,6 @@ select {
     .about-us-section {
         width         : 100%;
         height        : 500px;
-        /* border     : 1px solid red; */
         padding       : 20px;
         box-sizing    : border-box;
         display       : flex;
@@ -383,14 +378,12 @@ select {
     }
 
     .recent-orders-section {
-        width    : 100%;
-        /* border: 1px solid green; */
+        width: 100%;
     }
 
     .feedback-section {
         width         : 100%;
         height        : 250px;
-        /* border     : 1px solid red; */
         padding       : 20px;
         box-sizing    : border-box;
         display       : flex;
@@ -489,7 +482,351 @@ select {
 
     th {
         display: none;
-        /* Hide table headers */
+    }
+
+    td {
+        border      : none;
+        position    : relative;
+        padding-left: 50%;
+        white-space : nowrap;
+    }
+
+    td:before {
+        content     : attr(data-label);
+        position    : absolute;
+        left        : 0;
+        width       : 50%;
+        padding-left: 10px;
+        font-weight : bold;
+        white-space : nowrap;
+        text-align  : left;
+
+    }
+
+    .text-align-center {
+        text-align: center;
+    }
+
+    .text-align-left {
+        text-align: center;
+    }
+
+    tbody {
+        height    : 360px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .gap8px>svg {
+        height: 15px;
+        width : 15px;
+    }
+
+    .activity {
+        flex-wrap: wrap;
+        gap      : 8px;
+    }
+
+    .activity-section {
+        width        : 100%;
+        height       : 325px;
+        margin-bottom: 0;
+
+    }
+
+    .about-us-section {
+        width : 100%;
+        height: 245px;
+    }
+}
+
+@media (max-width: 1720px) {
+    .dashboard-overview {
+        flex-wrap: wrap;
+    }
+
+    .dashboard-overview-cards,
+    .dashboard-overview-profit,
+    .activity-section,
+    .about-us-section,
+    .recent-orders-section,
+    .feedback-section {
+        width: 100%;
+    }
+
+    .cards {
+        width: calc(100% - 24px);
+    }
+
+    .activity {
+        display: block;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .dashboard-overview {
+        flex-wrap: wrap;
+    }
+
+    .dashboard-overview-cards,
+    .dashboard-overview-profit,
+    .activity-section,
+    .about-us-section,
+    .recent-orders-section,
+    .feedback-section {
+        width: 100%;
+    }
+
+    .last-section {
+        gap: 25px;
+    }
+
+    .recent-orders-section {
+        width: 62%;
+    }
+
+    .feedback-section {
+        width  : 40%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 992px) {
+    .dashboard-overview {
+        flex-direction: column;
+        align-items   : stretch;
+        gap           : 20px;
+    }
+
+    .dashboard-overview-cards,
+    .activity-section,
+    .recent-orders-section,
+    .feedback-section,
+    .about-us-section {
+        width: 100%;
+    }
+
+    .cards {
+
+        gap: 12px;
+    }
+
+    .profit-card,
+    .activity-section,
+    .recent-orders-section,
+    .feedback-section,
+    .about-us-section {
+        padding: 10px;
+    }
+
+    .activity {
+        display: block;
+    }
+
+    .fs24px {
+        font-size: 18px
+    }
+
+    .feedback-section {
+        width: 100%;
+    }
+
+    .last-section {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        gap            : 25px;
+        flex-wrap      : wrap;
+    }
+
+    .recent-orders-section {
+        width: 100%;
+    }
+
+    .dashboard-overview-cards {
+        gap: 12px;
+    }
+}
+
+@media(max-width:720px) {
+    .dashboard-overview {
+        justify-content: space-between;
+        display        : flex;
+        align-items    : center;
+        gap            : 50px;
+        flex-wrap      : wrap;
+    }
+
+    .dashboard-overview-cards {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        gap            : 27px;
+        flex-wrap      : wrap;
+        width          : 100%;
+    }
+
+    .cards {
+        padding       : 12px;
+        width         : 100%;
+        height        : 150px;
+        display       : flex;
+        background    : #1f2029;
+        flex-direction: column;
+        border-radius : 12px;
+        gap           : 13px;
+        color         : white;
+    }
+
+    .dashboard-overview-profit {
+        width: 100%;
+    }
+
+    .activity {
+        display        : block;
+        justify-content: space-between;
+        align-items    : center;
+        gap            : 54px;
+        flex-wrap      : wrap;
+    }
+
+    .activity-section {
+        width        : 100%;
+        height       : 500px;
+        margin       : 32px 0;
+        background   : #1f2029;
+        border-radius: 12px;
+        padding      : 12px;
+        box-sizing   : border-box;
+    }
+
+    .about-us-section {
+        width         : 100%;
+        height        : 500px;
+        padding       : 20px;
+        box-sizing    : border-box;
+        display       : flex;
+        flex-direction: column;
+        gap           : 20px;
+        background    : #1f2029;
+        border-radius : 12px;
+        margin        : 32px 0;
+    }
+
+    .last-section {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        gap            : 54px;
+        flex-wrap      : wrap;
+    }
+
+    .recent-orders-section {
+        width: 100%;
+    }
+
+    .feedback-section {
+        width         : 100%;
+        height        : 250px;
+        padding       : 20px;
+        box-sizing    : border-box;
+        display       : flex;
+        flex-direction: column;
+        gap           : 20px;
+        height        : 524px;
+        border-radius : 12px;
+        overflow-y    : scroll;
+        background    : #1f2029;
+    }
+}
+
+@media(max-width:550px) {
+    .dashboard-overview {
+        justify-content: space-between;
+        display        : flex;
+        align-items    : center;
+        gap            : 28px;
+        flex-wrap      : wrap;
+    }
+
+    .dashboard-overview-cards {
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+        gap            : 28px;
+        width          : 100%;
+        flex-wrap      : wrap;
+    }
+
+    .cards {
+        padding      : 8px;
+        width        : 100px;
+        height       : 100px;
+        border-radius: 4px;
+        gap          : 4px;
+        flex-grow    : 1;
+        padding      : 12px;
+    }
+
+    .title {
+        font-size    : 16px;
+        font-weight  : 600;
+        margin-bottom: 16px;
+    }
+
+    .profit-card {
+        padding      : 8px;
+        height       : 157px;
+        border-radius: 0px;
+        gap          : 4px;
+    }
+
+    .dashboard-overview-profit {
+        width: 100%;
+    }
+
+    .profit-card-left {
+        gap: 32px;
+    }
+
+    .fs24px {
+        font-size: 12px;
+    }
+
+    .fs40px {
+        font-size: 28px;
+    }
+
+    .last-section {
+        flex-wrap: wrap;
+    }
+
+    .recent-orders-section {
+        width: 100%;
+
+    }
+
+    .feedback-section {
+        width        : 100%;
+        padding      : 12px;
+        gap          : 12px;
+        height       : 350px;
+        border-radius: 12px;
+
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    th {
+        display: none;
     }
 
     td {

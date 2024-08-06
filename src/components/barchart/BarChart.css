@@ -5,6 +5,7 @@
 
 @media(max-width: 550px) {
     .container {
-        max-height: 270px;
+        max-height: 277px;
+        min-width : 430px;
     }
 }

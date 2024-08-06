@@ -1,12 +1,12 @@
 import React from 'react'
-import './navbar.css'
 import { MdOutlineEmail } from "react-icons/md";
 import { MdOutlineSettings } from "react-icons/md";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { FaRegUserCircle } from "react-icons/fa";
+import './navbar.css'
 import Search from '../search/Search';
 
-const navbar = () => {
+const Navbar = () => {
     return (
         <div className="navbar">
             <div className="navbar-container">
@@ -24,4 +24,4 @@ const navbar = () => {
     )
 }
 
-export default navbar
+export default Navbar

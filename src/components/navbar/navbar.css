@@ -43,7 +43,8 @@ input::placeholder {
     justify-content: center;
 }
 
-@media(max-width:400px) {
+/* media query */
+@media(max-width:550px) {
     .navbar {
         padding: 0 8px;
     }
@@ -61,18 +62,5 @@ input::placeholder {
     .circular-icon {
         width : 25px;
         height: 25px;
-    }
-}
-
-@media (min-width: 900px) and (max-width: 1200px) {
-    .navbar-search-bar>input {
-        background   : black;
-        font-size    : 20px;
-        width        : 100%;
-        border       : none;
-        outline      : none;
-        border-radius: 8px;
-        padding      : 7px;
-        color        : white;
     }
 }

@@ -1,26 +1,16 @@
-import React from 'react'
-import Navbar from '../navbar/navbar'
-import './Main.css'
+import { Circle } from 'rc-progress';
+import React from 'react';
+import { BiDish, BiFoodMenu, BsGraphDownArrow, BsGraphUpArrow, FaGreaterThan, FaRegUserCircle, GoGoal, GoTriangleDown, GoTriangleUp, PiClockCountdownBold, TbSum } from "../react-icons/react-icons";
+import comments from '../../dummy/comments.json';
 import Dashboard from '../../pages/dashboard/Dashboard';
-import { BsGraphUpArrow } from "react-icons/bs";
-import { BsGraphDownArrow } from "react-icons/bs";
-import { PiClockCountdownBold } from "react-icons/pi";
-import { TbSum } from "react-icons/tb";
-import { GoTriangleDown } from "react-icons/go";
-import { GoTriangleUp } from "react-icons/go";
-import { GoGoal } from "react-icons/go";
-import { BiDish } from "react-icons/bi";
-import { BiFoodMenu } from "react-icons/bi";
-import { FaGreaterThan } from "react-icons/fa";
 import recentOrder from '../../recentOrders.json';
-import { FaRegUserCircle } from "react-icons/fa";
-import Rating from '../rating/rating';
-import comments from '../../comments.json';
-import { Line, Circle } from 'rc-progress';
 import BarChart from '../barchart/Barchart';
+import Navbar from '../navbar/navbar';
+import Rating from '../rating/rating';
+import './Body.css';
+import data from '../../dummy/barData.json'
 
-const Main = () => {
-
+const Body = () => {
     const cards = [
         { id: 1, icon: <PiClockCountdownBold size={"45px"} className='blue' />, title: "Total Orders", value: "75", inc: true, perc: "3%" },
         { id: 2, icon: <BsGraphUpArrow size={"45px"} className='green' />, title: "Total Delivered", value: "70", inc: false, perc: "3%" },
@@ -32,7 +22,7 @@ const Main = () => {
             <div className='main-wrapper'>
                 <Navbar />
                 <Dashboard title="Dashboard">
-                    {/* dashboard first row */}
+                    {/*first row */}
                     <div className="dashboard-overview">
                         <div className="dashboard-overview-cards">
                             {cards.map(({ id, icon, title, value, inc, perc }) => {
@@ -68,11 +58,10 @@ const Main = () => {
                             </div>
                         </div>
                     </div>
-                    {/* dashboard second row */}
+                    {/* second row */}
                     <div className="activity">
                         <div className="activity-section">
-                            {/* add bar chart here */}
-                            {/* <div className="d-flex"> */}
+                            {/*  bar chart  */}
                             <div className="activity-section-title">
                                 <span>Activity</span>
                                 <div>
@@ -84,16 +73,12 @@ const Main = () => {
                                 </div>
                             </div>
                             <div className="activity-section-chart">
-                                {/* add dropdown here to see weekly,monthly,yearly */}
-
-
-                                <BarChart data={[30, 86, 168, 281, 303, 365, 504, 573, 660, 168, 281, 303, 365, 168, 281, 303, 365, 168, 281, 303, 365]} />
-
-                                {/* </div> */}
+                                {/* dropdown for graph filter */}
+                                <BarChart data={data} />
                             </div>
                         </div>
                         <div className="about-us-section">
-                            {/* add about us here */}
+                            {/*  about us */}
                             <div className='d-flex justify-content-between align-items-center style1234'>
                                 <div className='d-flex align-items-center gap10px'>
                                     <div className='bg-circular-icon  bg-red'><GoGoal size="50px" /></div>
@@ -174,4 +159,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Body;
