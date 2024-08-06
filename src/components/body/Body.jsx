@@ -19,12 +19,12 @@ const Body = () => {
     ];
     return (
         <>
-            <div className='main-wrapper'>
+            <div className='body'>
                 <Navbar />
                 <Dashboard title="Dashboard">
                     {/*first row */}
-                    <div className="dashboard-overview">
-                        <div className="dashboard-overview-cards">
+                    <div className="dashboard-wrapper">
+                        <div className="dashboard-cards">
                             {cards.map(({ id, icon, title, value, inc, perc }) => {
                                 return (<div className='cards'>
                                     <div>{icon}</div>
@@ -37,7 +37,7 @@ const Body = () => {
                                 )
                             })}
                         </div>
-                        <div className="dashboard-overview-profit">
+                        <div className="dashboard-revenue-wrapper">
                             <div className="profit-card">
                                 <div className="profit-card-left">
                                     <div className='fs24px'>Net Profit</div>
@@ -123,7 +123,7 @@ const Body = () => {
                                             return (
 
 
-                                                <tr>
+                                                <tr key={order.orderNo}>
                                                     <td className='text-align-left d-flex align-items-center gap8px' data-label="Customer" ><FaRegUserCircle size="25px" /> <div>{order.customer}</div></td>
                                                     <td className='text-align-center' data-label="Amount">{order.orderNo}</td>
                                                     <td className='text-align-left' data-label="Order No.">${order.amount}</td>

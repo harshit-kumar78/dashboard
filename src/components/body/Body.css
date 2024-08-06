@@ -1,10 +1,10 @@
-.main-wrapper {
+.body {
     flex      : 1;
     overflow-x: hidden;
 }
 
 
-.dashboard-overview {
+.dashboard-wrapper {
     justify-content: space-between;
     display        : flex;
     align-items    : center;
@@ -12,7 +12,7 @@
 }
 
 
-.dashboard-overview-cards {
+.dashboard-cards {
     display        : flex;
     align-items    : center;
     justify-content: space-between;
@@ -32,7 +32,7 @@
     color         : white;
 }
 
-.dashboard-overview-profit {
+.dashboard-revenue-wrapper {
     width: 30%;
 
 }
@@ -196,12 +196,12 @@ select {
 
 /* media query */
 @media (max-width: 1720px) {
-    .dashboard-overview {
+    .dashboard-wrapper {
         flex-wrap: wrap;
     }
 
-    .dashboard-overview-cards,
-    .dashboard-overview-profit,
+    .dashboard-cards,
+    .dashboard-revenue-wrapper,
     .activity-section,
     .about-us-section,
     .recent-orders-section,
@@ -220,12 +220,12 @@ select {
 }
 
 @media (max-width: 1200px) {
-    .dashboard-overview {
+    .dashboard-wrapper {
         flex-wrap: wrap;
     }
 
-    .dashboard-overview-cards,
-    .dashboard-overview-profit,
+    .dashboard-cards,
+    .dashboard-revenue-wrapper,
     .activity-section,
     .about-us-section,
     .recent-orders-section,
@@ -248,13 +248,13 @@ select {
 }
 
 @media (max-width: 992px) {
-    .dashboard-overview {
+    .dashboard-wrapper {
         flex-direction: column;
         align-items   : stretch;
         gap           : 20px;
     }
 
-    .dashboard-overview-cards,
+    .dashboard-cards,
     .activity-section,
     .recent-orders-section,
     .feedback-section,
@@ -299,13 +299,13 @@ select {
         width: 100%;
     }
 
-    .dashboard-overview-cards {
+    .dashboard-cards {
         gap: 12px;
     }
 }
 
 @media(max-width:720px) {
-    .dashboard-overview {
+    .dashboard-wrapper {
         justify-content: space-between;
         display        : flex;
         align-items    : center;
@@ -313,7 +313,7 @@ select {
         flex-wrap      : wrap;
     }
 
-    .dashboard-overview-cards {
+    .dashboard-cards {
         display        : flex;
         align-items    : center;
         justify-content: center;
@@ -334,7 +334,7 @@ select {
         color         : white;
     }
 
-    .dashboard-overview-profit {
+    .dashboard-revenue-wrapper {
         width: 100%;
     }
 
@@ -397,7 +397,7 @@ select {
 }
 
 @media(max-width:550px) {
-    .dashboard-overview {
+    .dashboard-wrapper {
         justify-content: space-between;
         display        : flex;
         align-items    : center;
@@ -405,7 +405,7 @@ select {
         flex-wrap      : wrap;
     }
 
-    .dashboard-overview-cards {
+    .dashboard-cards {
         display        : flex;
         align-items    : center;
         justify-content: space-between;
@@ -437,7 +437,7 @@ select {
         gap          : 4px;
     }
 
-    .dashboard-overview-profit {
+    .dashboard-revenue-wrapper {
         width: 100%;
     }
 
@@ -541,12 +541,12 @@ select {
 }
 
 @media (max-width: 1720px) {
-    .dashboard-overview {
+    .dashboard-wrapper {
         flex-wrap: wrap;
     }
 
-    .dashboard-overview-cards,
-    .dashboard-overview-profit,
+    .dashboard-cards,
+    .dashboard-revenue-wrapper,
     .activity-section,
     .about-us-section,
     .recent-orders-section,
@@ -565,12 +565,12 @@ select {
 }
 
 @media (max-width: 1200px) {
-    .dashboard-overview {
+    .dashboard-wrapper {
         flex-wrap: wrap;
     }
 
-    .dashboard-overview-cards,
-    .dashboard-overview-profit,
+    .dashboard-cards,
+    .dashboard-revenue-wrapper,
     .activity-section,
     .about-us-section,
     .recent-orders-section,
@@ -593,13 +593,13 @@ select {
 }
 
 @media (max-width: 992px) {
-    .dashboard-overview {
+    .dashboard-wrapper {
         flex-direction: column;
         align-items   : stretch;
         gap           : 20px;
     }
 
-    .dashboard-overview-cards,
+    .dashboard-cards,
     .activity-section,
     .recent-orders-section,
     .feedback-section,
@@ -644,13 +644,13 @@ select {
         width: 100%;
     }
 
-    .dashboard-overview-cards {
+    .dashboard-cards {
         gap: 12px;
     }
 }
 
 @media(max-width:720px) {
-    .dashboard-overview {
+    .dashboard-wrapper {
         justify-content: space-between;
         display        : flex;
         align-items    : center;
@@ -658,7 +658,7 @@ select {
         flex-wrap      : wrap;
     }
 
-    .dashboard-overview-cards {
+    .dashboard-cards {
         display        : flex;
         align-items    : center;
         justify-content: center;
@@ -679,7 +679,7 @@ select {
         color         : white;
     }
 
-    .dashboard-overview-profit {
+    .dashboard-revenue-wrapper {
         width: 100%;
     }
 
@@ -742,7 +742,7 @@ select {
 }
 
 @media(max-width:550px) {
-    .dashboard-overview {
+    .dashboard-wrapper {
         justify-content: space-between;
         display        : flex;
         align-items    : center;
@@ -750,7 +750,7 @@ select {
         flex-wrap      : wrap;
     }
 
-    .dashboard-overview-cards {
+    .dashboard-cards {
         display        : flex;
         align-items    : center;
         justify-content: space-between;
@@ -782,7 +782,7 @@ select {
         gap          : 4px;
     }
 
-    .dashboard-overview-profit {
+    .dashboard-revenue-wrapper {
         width: 100%;
     }
 
